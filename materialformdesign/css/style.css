@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background: #28419c;
+    color: #fff;
+
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: rgba(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.from-control{
+    width: 300px;
+    margin: 20px 0 40px;
+
+    position: relative;
+}
+
+.from-control .input{
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.from-control .input:focus{
+    outline: 0;
+    border-bottom-color: #1390f0;
+}
+
+button{
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 15px;
+    background: #1390f0;
+    border: none;
+    border-radius: 5px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #1390f0;
+}
+
+.from-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.from-control label span{
+    font-size: 18px;
+    display: inline-flex;
+    transition: 0.3s ease;
+}
+
+.from-control input:focus + label span,
+.from-control input:valid + label span{
+    color: #1390f0;
+    transform: translateY(-30px);
+}
+
+
